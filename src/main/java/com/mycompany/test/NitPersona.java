@@ -33,7 +33,7 @@ public class NitPersona {
                 if (i == 0) {
             JSONObject object2 = (JSONObject) arrayObject.get(i);
             String tipoFiltro = object2.get("NOMBRE").toString();
-            System.out.println("QUE MIERDA IMPRIME= "+tipoFiltro);
+            System.out.println("QUE MIERDA IMPRIME= "+ tipoFiltro);
                 }
              }
 
