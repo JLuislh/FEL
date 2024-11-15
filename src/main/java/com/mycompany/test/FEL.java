@@ -4,10 +4,7 @@
  */
 package com.mycompany.test;
 
-import com.google.gson.Gson;
 import java.io.IOException;
-import java.util.Properties;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -26,12 +23,12 @@ public class FEL {
         try {
             String apiKey = "TAXID=000000123456&FORMAT=''&USERNAME=TESTUSER";
             String accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyIjoiR1QuMDAwMTIwMDExNjYyLlRFU1RVU0VSIiwiQ291bnRyeSI6IkdUIiwiRW52IjoiMCIsIm5iZiI6MTcxMDUzMjYxOCwiZXhwIjoxNzEzMTI0NjE4LCJpYXQiOjE3MTA1MzI2MTgsImlzcyI6Imh0dHBzOi8vd3d3LmRpZ2lmYWN0LmNvbS5ndCIsImF1ZCI6Imh0dHBzOi8vYXBpbnVjLmRpZ2lmYWN0LmNvbS5kby9kby5jb20uYXBpbnVjIn0.0F3dLLxUvOHA66hCr7FUEwOXllyCla5IZiVN07_wLkk";
-            String endpoint = "your_endpoint";
-            String response = apiClient.get(endpoint, apiKey, accessToken);
+            //String endpoint = "your_endpoint";
+            String response = apiClient.get(/*endpoint,*/ apiKey, accessToken);
             System.out.println(response);
            
             JSONObject  jsonObject = new JSONObject(response);
-            JSONObject object2 = (jsonObject); 
+            JSONObject object2 = (jsonObject);
             String auto = object2.get("authNumber").toString();
             String lot = object2.get("batch").toString();
             String serie = object2.get("serial").toString();

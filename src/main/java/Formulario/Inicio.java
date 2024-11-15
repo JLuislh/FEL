@@ -8,7 +8,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.mycompany.test.RestApiClient;
 import java.io.IOException;
-import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.JSONArray;
@@ -153,7 +152,5 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JTextField nombre;
     // End of variables declaration//GEN-END:variables
 
-    private JsonObject JSONObject(String response) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 }

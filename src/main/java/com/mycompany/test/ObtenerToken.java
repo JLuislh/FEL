@@ -4,9 +4,7 @@
  */
 package com.mycompany.test;
 import com.google.gson.Gson;
-import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
-import java.io.BufferedReader;
 import java.util.Properties;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;

@@ -15,14 +15,13 @@ public class FELclas {
     private static final String AUTHORIZATION_HEADER = "Authorization";
      public static final MediaType MEDIA_TYPE_MARKDOWN
       = MediaType.parse("application/xml");
-    private OkHttpClient client;
+    private final OkHttpClient client;
 
     public FELclas() {
-        
         this.client = new OkHttpClient();
     }
     File file = new File("C:\\Complementos\\NUC1.xml");
-    public String get(String endpoint, String apiKey, String accessToken) throws IOException {
+    public String get(/*String endpoint,*/ String apiKey, String accessToken) throws IOException {
         Request request = new Request.Builder()
                 .url(BASE_URL + "?" + apiKey)
                 .header("Content-Type",   "application/xml")
